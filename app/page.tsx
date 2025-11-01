@@ -87,7 +87,7 @@ const TodoPage: React.FC = () => {
     saveTodos(reduced);
   };
 
-  // Mark as Complete with 🎉 Confetti
+  // Mark as Complete with  Confetti
   const handleComplete = (index: number, e?: React.MouseEvent) => {
     const now = new Date();
     const completedOn = `${now.toLocaleDateString()} ${now.toLocaleTimeString()}`;
@@ -97,7 +97,7 @@ const TodoPage: React.FC = () => {
     localStorage.setItem("completedTodos", JSON.stringify(updatedCompleted));
     handleDeleteTodo(index);
 
-    // 🎆 Confetti sparkle burst on click
+    // Confetti sparkle burst on click
     const x = e ? e.clientX / window.innerWidth : 0.5;
     const y = e ? e.clientY / window.innerHeight : 0.5;
 
